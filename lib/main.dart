@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navigator_push_pop/SecondPage.dart';
 
 import 'FirstPage.dart';
 void main(){
@@ -15,6 +16,10 @@ class MyApp extends StatelessWidget{
         theme: ThemeData(primarySwatch: Colors.indigo),
         debugShowCheckedModeBanner: false,
         home: FirstPage(title: "FirstPage") ,
+        routes: <String,WidgetBuilder>{
+          'page1':(BuildContext context)=>const FirstPage(title: "FirstPage"),
+          'page2':(BuildContext context)=>const SecondPage(title: "SecondPage"),
+        },
       );
     
   }

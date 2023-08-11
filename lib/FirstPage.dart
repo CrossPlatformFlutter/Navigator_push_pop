@@ -20,7 +20,8 @@ class FirstPage extends StatelessWidget{
                     const Padding(padding: EdgeInsets.only(bottom: 20)),
                     ElevatedButton(
                       onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (BuildContext context)=>SecondPage(title: title)));
+                        Navigator.pushNamed(context,"page2");
+                      //Navigator.push(context, MaterialPageRoute(builder: (BuildContext context)=>SecondPage(title: title)));
                       },
                           style: ElevatedButton.styleFrom(
                            backgroundColor: Colors.teal, 
