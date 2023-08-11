@@ -20,7 +20,11 @@ class SecondPage extends StatelessWidget{
             ElevatedButton(onPressed: (){
                 Navigator.pushNamed(context,"page1");
                      //Navigator.pop(context);//Navigator.of(context).pop();
-            }, child: Text("Previous Page"),style: ElevatedButton.styleFrom(backgroundColor: Colors.teal),)
+            }, child: Text(" Page 1"),style: ElevatedButton.styleFrom(backgroundColor: Colors.teal),),
+            ElevatedButton(onPressed: (){
+                Navigator.pushNamed(context,"page3");
+                     //Navigator.pop(context);//Navigator.of(context).pop();
+            }, child: Text("Page 3"),style: ElevatedButton.styleFrom(backgroundColor: Colors.teal),)
          ],
       ),
       ),

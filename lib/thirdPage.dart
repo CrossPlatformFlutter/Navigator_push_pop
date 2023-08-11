@@ -2,40 +2,39 @@ import 'package:flutter/material.dart';
 import 'package:navigator_push_pop/SecondPage.dart';
 
 
-class FirstPage extends StatelessWidget{
-  const FirstPage({super.key,required this.title});
+class ThirdPage extends StatelessWidget{
+  const ThirdPage({super.key,required this.title});
   final String title;
   @override
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        title: Text("firstPage"),
+        title: Text("ThirdPage"),
       ),
       body:  Center(child: 
           Column(
              mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-                    Text("First Screen",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 48,color: Colors.teal),
+                    Text("Third Screen",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 48,color: Colors.teal),
                     ),
                     const Padding(padding: EdgeInsets.only(bottom: 20)),
                     ElevatedButton(
                       onPressed: (){
-                        Navigator.pushNamed(context,"page2");
-                      //Navigator.push(context, MaterialPageRoute(builder: (BuildContext context)=>SecondPage(title: title)));
+                        Navigator.pushNamed(context,"page1");
                       },
                           style: ElevatedButton.styleFrom(
                            backgroundColor: Colors.teal, 
                         ),
-                     child: Text("Go to Screen 2"),
+                     child: Text(" Screen 1"),
                     ),
-                     ElevatedButton(
+                       ElevatedButton(
                       onPressed: (){
-                        Navigator.pushNamed(context,"page3");
+                        Navigator.pushNamed(context,"page2");
                       },
                           style: ElevatedButton.styleFrom(
                            backgroundColor: Colors.teal, 
                         ),
-                     child: Text("Go to Screen 3"),
+                     child: Text("Screen 2"),
                     )
       ],
       ),
