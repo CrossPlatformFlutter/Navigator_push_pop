@@ -18,7 +18,7 @@ class SecondPage extends StatelessWidget{
             Text("SECOND PAGE",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 48,color: Colors.teal)),
             const Padding(padding: EdgeInsets.only(bottom: 20)),
             ElevatedButton(onPressed: (){
-              Navigator.push(context,MaterialPageRoute(builder: (BuildContext context)=>FirstPage(title: "first")));
+                     Navigator.pop(context);//Navigator.of(context).pop();
             }, child: Text("Previous Page"),style: ElevatedButton.styleFrom(backgroundColor: Colors.teal),)
          ],
       ),
