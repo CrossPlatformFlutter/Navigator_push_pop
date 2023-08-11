@@ -22,7 +22,7 @@ class ThirdPage extends StatelessWidget{
                       onPressed: (){
                         Navigator.pushNamed(context,"page1");
                       },
-                          style: ElevatedButton.styleFrom(
+                           style: ElevatedButton.styleFrom(
                            backgroundColor: Colors.teal, 
                         ),
                      child: Text(" Screen 1"),

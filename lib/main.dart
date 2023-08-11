@@ -8,7 +8,7 @@ void main(){
 }
 
 class MyApp extends StatelessWidget{
-  MyApp({super.key});
+  const MyApp({super.key});
   @override
   Widget build(BuildContext context){
     return
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget{
         title: "App",
         theme: ThemeData(primarySwatch: Colors.indigo),
         debugShowCheckedModeBanner: false,
-        home: FirstPage(title: "FirstPage") ,
+        home: const FirstPage(title: "FirstPage") ,
         routes: <String,WidgetBuilder>{
           'page1':(BuildContext context)=>const FirstPage(title: "FirstPage"),
           'page2':(BuildContext context)=>const SecondPage(title: "SecondPage"),

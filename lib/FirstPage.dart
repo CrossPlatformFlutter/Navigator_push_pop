@@ -9,13 +9,13 @@ class FirstPage extends StatelessWidget{
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
-        title: Text("firstPage"),
+        title: const Text("firstPage"),
       ),
       body:  Center(child: 
           Column(
              mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-                    Text("First Screen",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 48,color: Colors.teal),
+                    const Text("First Screen",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 48,color: Colors.teal),
                     ),
                     const Padding(padding: EdgeInsets.only(bottom: 20)),
                     ElevatedButton(
@@ -26,7 +26,7 @@ class FirstPage extends StatelessWidget{
                           style: ElevatedButton.styleFrom(
                            backgroundColor: Colors.teal, 
                         ),
-                     child: Text("Go to Screen 2"),
+                     child: const Text("Go to Screen 2"),
                     ),
                      ElevatedButton(
                       onPressed: (){
@@ -35,7 +35,7 @@ class FirstPage extends StatelessWidget{
                           style: ElevatedButton.styleFrom(
                            backgroundColor: Colors.teal, 
                         ),
-                     child: Text("Go to Screen 3"),
+                     child: const Text("Go to Screen 3"),
                     )
       ],
       ),
